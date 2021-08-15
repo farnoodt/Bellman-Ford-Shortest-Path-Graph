@@ -25,10 +25,10 @@ namespace Dijkstra_s_Shortest_Path_Graph
             MyGraph[Source].Add(new Pair(Destination, Weight));
         }
 
-        public void ShortestPath(int Source, int Vertex)
+        public void ShortestPath(int Source)
         {
-            int[] shortPath = new int[Vertex+1];
-            bool[] IsVisited = new bool[Vertex + 1];
+            int[] shortPath = new int[V + 1];
+            bool[] IsVisited = new bool[V + 1];
             Queue<int> Q = new Queue<int>();
 
             for (int i = 0; i < shortPath.Length; i++)
